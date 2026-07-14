@@ -1,4 +1,4 @@
-# Linux Permissions & Ownership | Cloud Support Portfolio Project
+# Linux Permissions & Ownership
 
 > Part of my Cloud Support Engineering portfolio, demonstrating Linux file permissions, ownership, access control, and troubleshooting through a real-world scenario.
 
