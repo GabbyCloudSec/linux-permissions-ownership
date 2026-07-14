@@ -50,9 +50,21 @@ The solution was verified by comparing file permissions before and after each ch
 
 ## Screenshots
 
-- Permission investigation
-- Permission modifications
-- Final permission verification
+### Project Structure
+
+![Project Structure](screenshots/01-project-structure.png)
+
+---
+
+### Technical Implementation
+
+![Technical Implementation](screenshots/02-technical-implementation.png)
+
+---
+
+### Verification
+
+![Verification](screenshots/03-verification.png)
 
 ---
 
