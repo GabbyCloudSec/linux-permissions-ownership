@@ -2,7 +2,19 @@
 
 > Part of my Cloud Support Engineering portfolio, demonstrating Linux file permissions, ownership, access control, and troubleshooting through a real-world scenario.
 
-**Status:** ✅ Complete
+**Status:** Complete
+
+---
+
+## At a Glance
+
+**Scenario:** A user lost file access and could no longer run a backup script after permissions were modified.
+
+**Solution:** Diagnosed the issue, restored correct permissions using `chmod`, applied least-privilege access, and verified every change with `ls -l`.
+
+**Skills:** Linux permissions & ownership · Access control · Least privilege · Command-line troubleshooting · Technical documentation
+
+**Tools:** Ubuntu (WSL2) · Bash · Git · GitHub
 
 ---
 
@@ -11,6 +23,17 @@
 A Cloud Support Engineer was asked to investigate why a user could no longer access important files or execute a backup script after file permissions had been modified.
 
 The solution involved reviewing Linux file permissions, ownership, and access rights, applying least-privilege permissions, restoring execute access where required, and verifying every change using standard Linux administration tools.
+
+---
+
+## Objectives
+
+- Understand Linux file permissions and ownership
+- Practice modifying permissions with `chmod`
+- Compare symbolic (`rwx`) and numeric (`755`, `644`, `600`) permissions
+- Apply the principle of least privilege
+- Verify permission changes using `ls -l`
+- Document a real-world troubleshooting workflow
 
 ---
 
@@ -40,8 +63,6 @@ chmod 600 private/passwords.txt
 
 The solution was verified by comparing file permissions before and after each change and confirming that only authorized users retained the intended level of access.
 
-### Verification Results
-
 | File | Permissions | Purpose |
 |------|-------------|---------|
 | `backup.sh` | `755` (`rwxr-xr-x`) | Executable backup script |
@@ -53,19 +74,12 @@ The solution was verified by comparing file permissions before and after each ch
 ## Screenshots
 
 ### Project Structure
-
 ![Project Structure](screenshots/01-project-structure.png)
 
----
-
 ### Technical Implementation
-
 ![Technical Implementation](screenshots/02-technical-implementation.png)
 
----
-
 ### Verification
-
 ![Verification](screenshots/03-verification.png)
 
 ---
@@ -80,26 +94,13 @@ The solution was verified by comparing file permissions before and after each ch
 
 ---
 
-## Skills Demonstrated
-
-- Linux file permissions and ownership
-- Access control and least privilege
-- Symbolic and numeric permissions
-- Command-line troubleshooting
-- Technical documentation
-- Git and GitHub workflow
-
----
-
 ## Key Takeaway
 
-This project reinforced that symbolic and numeric permissions represent the same access model in different formats. It also demonstrated that execute permission is required for scripts to run and highlighted the importance of verifying every permission change with `ls -l` rather than assuming a command completed successfully.
+This project reinforced that symbolic and numeric permissions represent the same access model in different formats. It also demonstrated that execute permission is required for scripts to run, and highlighted the importance of verifying every permission change with `ls -l` rather than assuming a command completed successfully.
 
 ---
 
 ## Future Improvements
-
-
 
 - Implement POSIX Access Control Lists (ACLs)
 - Demonstrate recursive permission management
@@ -111,8 +112,7 @@ This project reinforced that symbolic and numeric permissions represent the same
 ## Author
 
 **Gabriell Bedoy**
-
-Cloud Support Engineer candidate building hands-on experience with Linux, AWS, networking, and cloud infrastructure.
+Aspiring Cloud Support Engineer building hands-on experience with Linux, AWS, networking, and cloud infrastructure.
 
 GitHub: https://github.com/GabbyCloudSec
 
